@@ -7,21 +7,21 @@ import os
  
 # 算法库定义 
 ALGORITHMS = {
-    1: ("拉马努金公式", "ramanujan"),
-    2: ("Chudnovsky算法", "chudnovsky"),
-    3: ("高斯-勒让德迭代法", "gauss_legendre"),
-    4: ("马青公式", "machin"),
-    5: ("并行Chudnovsky (千万位优化)", "chudnovsky_parallel")
+    1: ("拉马努金公式"， "ramanujan"),
+    2: ("Chudnovsky算法"， "chudnovsky"),
+    3: ("高斯-勒让德迭代法"， "gauss_legendre"),
+    4: ("马青公式"， "machin"),
+    5: ("并行Chudnovsky (千万位优化)"， "chudnovsky_parallel")
 }
  
 def compute_ramanujan(digits):
     """拉马努金公式实现"""
-    mpmath.mp.dps  = digits + 10 
+    mpmath.mp。dps  = digits + 10 
     C = 9801 / (2 * mpmath.sqrt(2)) 
     term = mpmath.mpf(1103) 
     sum_series = term 
     k = 0 
-    precomputed_396_p4 = mpmath.power(396,  4)
+    precomputed_396_p4 = mpmath.power(396，  4)
     
     progress = tqdm(total=100, desc="初始化")
     start_time = time.time() 
@@ -48,12 +48,12 @@ def compute_ramanujan(digits):
     
     pi = C / sum_series 
     progress.close() 
-    mpmath.mp.dps  = digits 
+    mpmath.mp。dps  = digits 
     return mpmath.mpf(pi),  time.time()  - start_time 
  
 def compute_chudnovsky(digits):
     """Chudnovsky算法实现"""
-    mpmath.mp.dps  = digits + 10 
+    mpmath.mp。dps  = digits + 10 
     C = 426880 * mpmath.sqrt(10005) 
     sum_series = mpmath.mpf(0) 
     k = 0 
