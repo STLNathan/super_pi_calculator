@@ -1,4 +1,4 @@
-# Super π Calculator 🚀
+# 📚 Super π Calculator - 超级π+计算器
 
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -34,8 +34,31 @@
 ```bash
 git clone https://github.com/STLNathan/super_pi_calculator.git
 cd super_pi_calculator
+```
 
-使用指南 🖥️
+2.安装Python及Pip3：
+
+- Python： [前往Python官网](https://www.python.org/)
+
+- Pip3：
+```bash
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python3 get-pip.py
+```
+
+3.运行：
+- 1.0版本（最多计算1000位）
+```bash
+python pi_c_1.0.py
+```
+- 1.1版本（无限制计算）
+```bash
+pip3 install mpmath
+pip3 install tqdm
+python pi_c_1.1.py
+```
+
+#使用指南 🖥️
 基本使用
 bash
 复制
