@@ -1,4 +1,4 @@
-# 📚 Super π Calculator - 超级π+计算器
+# 📚Super π Calculator - 超级π+计算器
 
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -36,95 +36,65 @@ git clone https://github.com/STLNathan/super_pi_calculator.git
 cd super_pi_calculator
 ```
 
-2.安装Python及Pip3：
-
-- Python： [前往Python官网](https://www.python.org/)
-
-- Pip3：
-```bash
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-sudo python3 get-pip.py
-```
+2.安装Python和Pip3：
+- Windows：[全网最详细的Python安装教程（Windows）](https://zhuanlan.zhihu.com/p/344887837)
+- MacOS：[如何在 Mac 上安装Python环境的详细指南](blog.csdn.net/linnaa6/article/details/145408266)
+- Linux：[如何在 Linux 下安装 Python 环境的详细指南](https://xie.infoq.cn/article/8dc39ff330bc650542d2b2e6e)
 
 3.运行：
-- 1.0版本（最多计算1000位）
+- 1.0版本（最多计算到一千位）：
+
 ```bash
 python pi_c_1.0.py
 ```
-- 1.1版本（无限制计算）
+
+- 1.1版本（可以无限计算）：
 ```bash
 pip3 install mpmath
 pip3 install tqdm
 python pi_c_1.1.py
 ```
 
-#使用指南 🖥️
-基本使用
-bash
-复制
-python super_pi.py
+## 使用指南 🖥️
+
 交互式界面将引导您：
+- 选择算法（支持1-5号算法）
+- 输入目标小数位数
+- 选择是否保存结果
 
-选择算法（支持1-5号算法）
-
-输入目标小数位数
-
-选择是否保存结果
-
-命令行参数
-bash
-复制
+## 命令行参数 🍎
 python super_pi.py --algorithm 5 --digits 1000000 --output pi.txt
-参数	说明	默认值
--a, --algorithm	算法编号（1-5）	交互输入
--d, --digits	目标小数位数	交互输入
--o, --output	输出文件路径	自动生成
-算法比较 📊
-算法
-拉马努金公式    中等精度教学演示
-Chudnovsky基础版	通用高精度计算
-高斯-勒让德	  快速高精度计算
-并行Chudnovsky	超大规模计算
-马青公式	低精度快速计算
-性能优化建议 💡使用cython
-内存配置：建议12g及以上
 
-bash
-复制
-export MPIMATH_CACHE_SIZE=2048  # 设置mpmath缓存大小（MB）
-并行计算：
+参数,说明,默认值
 
-使用算法5（并行Chudnovsky）
+-a, --algorithm , 算法编号（1-5） , 交互输入
 
-推荐CPU核心数 >= 8
+-d, --digits , 目标小数位数 , 交互输入
 
-自动任务分割系统
+-o, --output , 输出文件路径 , 自动生成
 
-精度选择：
+## 算法比较 📊
+- 拉马努金公式：中等精度教学演示
+- Chudnovsky基础版：通用高精度计算
+- 高斯-勒让德：快速高精度计算
+- 并行Chudnovsky：超大规模计算
+- 马青公式	低精度快速计算
+- 
+## 性能建议 💻 
+内存配置：建议4GiB及以上
 
-< 100万位：算法3（高斯-勒让德）
+## 🤝 参与开发
+欢迎提交PR或Issue，开发准则：
+- 新功能请创建feature分支
+- 使用Google-style Python注释规范
+- 重要功能需包含单元测试
+- 遵循PEP8代码格式规范
 
-> 100万位：算法5（并行Chudnovsky）
 
-贡献指南 🤝
-欢迎贡献代码！请遵循以下流程：
-
-Fork仓库
-
-创建特性分支（git checkout -b feature/awesome）
-
-提交修改（git commit -m 'Add awesome feature'）
-
-推送分支（git push origin feature/awesome）
-
-发起Pull Request
-
-许可证 📄
+## 📄 开源协议
 本项目采用 MIT License
 
-致谢 🙏
-Ramanujan, S. 的非凡公式
-
-Chudnovsky兄弟的开创性工作
-
-mpmath开发团队提供的高精度数学库
+## 🙏 致谢
+- Ramanujan, S. 的非凡公式
+- Chudnovsky兄弟的开创性工作
+- mpmath开发团队提供的高精度数学库
