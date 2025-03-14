@@ -4,6 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 一个高性能的圆周率计算工具，支持多种算法和并行加速，可计算千万位精度的π值。
+为庆祝2025年圆周率日🎉
 
 ## 功能特性 ✨
 
