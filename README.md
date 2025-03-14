@@ -79,7 +79,7 @@ python super_pi.py --algorithm 5 --digits 1000000 --output pi.txt
 - 高斯-勒让德：快速高精度计算
 - 并行Chudnovsky：超大规模计算
 - 马青公式	低精度快速计算
-- 
+  
 ## 性能建议 💻 
 内存配置：建议4GiB及以上
 
