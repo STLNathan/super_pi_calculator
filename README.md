@@ -64,16 +64,6 @@ python pi_c_1.1.py
 - 输入目标小数位数
 - 选择是否保存结果
 
-## 🍎 命令行参数
-python super_pi.py --algorithm 5 --digits 1000000 --output pi.txt
-
-参数,说明,默认值
-
--a, --algorithm , 算法编号（1-5） , 交互输入
-
--d, --digits , 目标小数位数 , 交互输入
-
--o, --output , 输出文件路径 , 自动生成
 
 ## 📊 算法比较
 - 拉马努金公式：中等精度教学演示
