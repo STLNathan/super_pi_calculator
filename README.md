@@ -7,7 +7,7 @@
 
 本程序使用Cython构建：[Cython的简单使用](https://www.cnblogs.com/freeweb/p/6548208.html)。
 
-🎉为庆祝2025年圆周率日🎉
+🎉为庆祝2025年的圆周率日🎉
 
 ## ✨ 功能特性
 
