@@ -7,6 +7,11 @@
 
 本程序使用Cython构建：[Cython的简单使用](https://www.cnblogs.com/freeweb/p/6548208.html)。
 
+使用Cython构建：
+```bash
+python cython_build_setup.py
+```
+
 🎉为庆祝2025年的圆周率日🎉
 
 ## ✨ 功能特性
